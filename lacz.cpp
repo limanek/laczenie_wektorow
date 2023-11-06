@@ -6,11 +6,9 @@
 
 std::vector<int> concatenateVector(std::vector<int> vec11, std::vector<int> vec22) {
     std::vector<int> allvec;
-    for(auto element: vec11) {
-        allvec.push_back(element);
-    }
-    for(auto element: vec22) {
-        allvec.push_back(element);
+    for(int i = 0; i<vec11.size(); i++){
+        allvec.push_back(vec11[i]);
+        allvec.push_back(vec22[i]);
     }
     return allvec;
 }
